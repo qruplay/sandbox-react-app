@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useEffect} from "react";
 import './App.css';
 
-const App = () => {
+const App: React.FC = () => {
+
   return (
     <h1 className={"app-main"}>
       Hello world!

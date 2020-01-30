@@ -1,5 +1,12 @@
+import React from 'react';
+import {shallow} from 'enzyme';
+import App from '../App';
+
 describe("<App />", () => {
   it('works', () => {
-    expect(1).toBe(1);
+    // when
+    const appShallow = shallow(<App/>);
+    // then
+    expect(appShallow.exists()).toBeTruthy();
   });
 });
