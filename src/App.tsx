@@ -1,12 +1,16 @@
-import React, {useEffect} from "react";
-import './App.css';
+import React from "react";
+import styled from 'styled-components';
+
+const StyledH1 = styled.h1`
+  color: red;
+`;
 
 const App: React.FC = () => {
 
   return (
-    <h1 className={"app-main"}>
+    <StyledH1>
       Hello world!
-    </h1>
+    </StyledH1>
   );
 };
 
